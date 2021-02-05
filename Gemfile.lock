@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    elo_brain (0.1.0)
+    elo_brain (1.0.0)
       dry-struct
       dry-validation
       zeitwerk (~> 2)
