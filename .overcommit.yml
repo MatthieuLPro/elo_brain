@@ -29,6 +29,6 @@ PrePush:
     enabled: true
     command: ['bundle', 'exec', 'rspec', '-f', 'p']
     quiet: false
-  Rubocop:
-    enabled: true
+#  Rubocop:
+#    enabled: true
 
