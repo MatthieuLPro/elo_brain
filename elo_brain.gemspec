@@ -3,7 +3,7 @@ require_relative 'lib/elo_brain/version'
 Gem::Specification.new do |spec|
   spec.name          = "elo_brain"
   spec.version       = EloBrain::VERSION
-  spec.authors       = ["matthieu <Malus> Lu"]
+  spec.authors       = ["Matthieu <Malus> Lu"]
   spec.email         = ["matthieu.lu.pro@gmail.com"]
 
   spec.summary       = "Simple elo calculation."
@@ -26,4 +26,13 @@ Gem::Specification.new do |spec|
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
+
+  spec.add_development_dependency "bundle-audit"
+  spec.add_development_dependency "overcommit"
+  spec.add_development_dependency 'rubocop', '> 0.58'
+  spec.add_development_dependency "rubocop-performance"
+
+  spec.add_dependency 'dry-struct'
+  spec.add_dependency 'dry-validation'
+  spec.add_dependency 'zeitwerk', '~> 2'
 end
