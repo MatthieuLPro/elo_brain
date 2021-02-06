@@ -31,11 +31,9 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundle-audit"
-  spec.add_development_dependency "coveralls"
   spec.add_development_dependency "overcommit"
   spec.add_development_dependency 'rubocop', '> 0.58'
   spec.add_development_dependency "rubocop-performance"
-  spec.add_development_dependency 'simplecov'
 
   spec.add_dependency 'dry-struct'
   spec.add_dependency 'dry-validation'

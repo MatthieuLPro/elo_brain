@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'coveralls'
-Coveralls.wear!
 require 'bundler/setup'
 require 'elo_brain'
 
