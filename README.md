@@ -1,5 +1,6 @@
 # EloBrain
 ![Gem](https://img.shields.io/gem/v/elo_brain?color=Green&label=Gem&logo=rubygems)
+[![Build Status](https://travis-ci.org/MatthieuLPro/elo_brain.svg?branch=master)](https://travis-ci.org/MatthieuLPro/elo_brain)
 
 This gem is an easy way to calculate new elos after a match between 2 players.
 
