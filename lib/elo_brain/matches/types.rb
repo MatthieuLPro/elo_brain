@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module EloBrain
-  module Elos
+  module Matches
     module Types
       include Dry.Types()
 

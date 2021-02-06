@@ -7,19 +7,19 @@ module EloBrain
       attribute :nb_matches, Types::Strict::Integer
       attribute :situation, Types::Strict::String
 
-      def self.from_contract(contract:)
-        new(
-          elo: contract[:elo],
-          nb_matches: contract[:nb_matches],
-          situation: contract[:situation]
-        )
-      end
-
       def self.from(elo:, nb_matches:, situation:)
         new(
           elo: elo,
           nb_matches: nb_matches,
           situation: situation
+        )
+      end
+
+      def self.from_contract(contract:)
+        new(
+          elo: contract[:elo],
+          nb_matches: contract[:nb_matches],
+          situation: contract[:situation]
         )
       end
     end

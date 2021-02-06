@@ -5,7 +5,7 @@ module EloBrain
     class Strategies
       STRATEGIES_COLLECTION = {
         winner: Winner,
-        looser: Looser
+        looser: Looser,
       }.freeze
 
       def call(strategy:)

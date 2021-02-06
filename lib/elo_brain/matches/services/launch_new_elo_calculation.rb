@@ -1,14 +1,17 @@
 # frozen_string_literal: true
 
 module EloBrain
-  module Elos
+  module Matches
     module Services
       class LaunchNewEloCalculation
         def call(strategy:, nb_matches:, player_elo:, opponent_elo:)
           coefficient = development_coefficient(nb_matches, player_elo)
           probability = win_probability(player_elo - opponent_elo)
-          calculation_strategy(strategy).new_elo(elo: player_elo, development_coefficient: coefficient,
-                                                 win_probability: probability)
+          calculation_strategy(strategy).new_elo(
+            elo: player_elo,
+            development_coefficient: coefficient,
+            win_probability: probability
+          )
         end
 
         private
