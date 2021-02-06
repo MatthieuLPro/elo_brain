@@ -4,8 +4,8 @@ module EloBrain
   module DevelopmentCoefficient
     module Situations
       class Amateur
-        COEFFICIENT = 20
-        ELO_MAX = 2_400
+        COEFFICIENT = EloBrain::Constants.new.read('development_coefficient', 'amateur', 'coefficient')
+        ELO_MAX = EloBrain::Constants.new.read('development_coefficient', 'amateur', 'elo_max')
         def initialize(elo:)
           @elo = elo
         end

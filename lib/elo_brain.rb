@@ -10,3 +10,5 @@ loader.setup
 module EloBrain
   class Error < StandardError; end
 end
+
+pp EloBrain::DevelopmentCoefficient::Situations::Amateur.new(elo: 1400).eligible?

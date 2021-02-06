@@ -1,0 +1,10 @@
+development_coefficient:
+  amateur:
+    coefficient: 20
+    elo_max: 2400
+  pro:
+    coefficient: 10
+    elo_min: 2399
+  starting:
+    coefficient: 40
+    nb_maximum_matches: 30

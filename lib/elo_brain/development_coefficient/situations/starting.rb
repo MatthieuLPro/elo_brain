@@ -4,8 +4,8 @@ module EloBrain
   module DevelopmentCoefficient
     module Situations
       class Starting
-        COEFFICIENT = 40
-        NB_MAXIMUM_MATCHES = 30
+        COEFFICIENT = EloBrain::Constants.new.read('development_coefficient', 'starting', 'coefficient')
+        NB_MAXIMUM_MATCHES = EloBrain::Constants.new.read('development_coefficient', 'starting', 'nb_maximum_matches')
         def initialize(nb_matches:)
           @nb_matches = nb_matches
         end

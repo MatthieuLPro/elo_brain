@@ -4,8 +4,8 @@ module EloBrain
   module DevelopmentCoefficient
     module Situations
       class Pro
-        COEFFICIENT = 10
-        ELO_MIN = 2_399
+        COEFFICIENT = EloBrain::Constants.new.read('development_coefficient', 'pro', 'coefficient')
+        ELO_MIN = EloBrain::Constants.new.read('development_coefficient', 'pro', 'elo_min')
         def initialize(elo:)
           @elo = elo
         end
